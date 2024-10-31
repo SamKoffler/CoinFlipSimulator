@@ -3,7 +3,9 @@ import random
 heads = 0
 tails = 0
 
-for i in range(10000):
+user_amount = int(input("Enter number of coin flips: "))
+
+for i in range(user_amount):
         x = random.randint(1,2)
         if x==1:
             heads+=1
@@ -11,4 +13,4 @@ for i in range(10000):
             tails+=1
 
 
-print(f"Score: Heads: {heads} Tails: {tails}")
+print(f"Heads: {heads} - Tails: {tails}")
